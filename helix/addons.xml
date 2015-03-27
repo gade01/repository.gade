@@ -2,7 +2,7 @@
 <addons>
 <addon
   id="skin.rapier"
-  version="7.3.4"
+  version="7.3.5"
   name="Rapier"
   provider-name="Scarfa, Gade">
   <requires>
