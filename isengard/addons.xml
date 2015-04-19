@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="resource.uisounds.rapier" version="1.0.0" name="Rapier UI Sounds" provider-name="Gade">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Rapier GUI sounds</summary>
+    <description lang="en">Rapier GUI sounds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="skin.rapier"
   version="8.0.9"
