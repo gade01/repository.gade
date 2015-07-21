@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="resource.images.recordlabels.white" name="White Recordlabel Icons" version="0.0.1" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" type="recordlabels" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Recordlabel icons</summary>
+		<description lang="en">White Recordlabel icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
