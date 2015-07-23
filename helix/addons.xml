@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.gade" name="Gade's Add-on Repository" version="1.0.1" provider-name="Gade">
+<addon id="repository.gade" name="Gade's Add-on Repository" version="1.0.2" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -25,9 +25,9 @@
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="15.9.0">
-			<info compressed="true">http://github.com/gade01/repository.gade/raw/master/j/addons.xml</info>
-			<checksum>http://github.com/gade01/repository.gade/raw/master/j/addons.xml.md5</checksum>
-			<datadir zip="true">http://github.com/gade01/repository.gade/raw/master/j</datadir>
+			<info compressed="true">http://github.com/gade01/repository.gade/raw/master/jarvis/addons.xml</info>
+			<checksum>http://github.com/gade01/repository.gade/raw/master/jarvis/addons.xml.md5</checksum>
+			<datadir zip="true">http://github.com/gade01/repository.gade/raw/master/jarvis</datadir>
 			<hashes>true</hashes>
 		</dir>
 	</extension>
