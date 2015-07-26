@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.gade" name="Gade's Add-on Repository" version="1.0.2" provider-name="Gade">
+<addon id="repository.gade" name="Gade's Add-on Repository" version="1.0.3" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
