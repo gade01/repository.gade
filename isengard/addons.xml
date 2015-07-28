@@ -52,7 +52,7 @@
 
 <addon
   id="skin.rapier"
-  version="8.2.5"
+  version="8.2.6"
   name="Rapier"
   provider-name="Scarfa, Gade">
   <requires>
@@ -77,6 +77,7 @@
     <summary lang="de">Rapier-Skin von Scarfa, Gade.</summary>
     <summary lang="el">Rapier από τον Scarfa, Gade.</summary>
     <summary lang="en">Rapier skin by Scarfa, Gade.</summary>
+	<summary lang="en_AU">Rapier skin by Scarfa, Gade.</summary>
     <summary lang="en_NZ">Rapier skin by Scarfa, Gade.</summary>
     <summary lang="en_US">Rapier skin by Scarfa, Gade.</summary>
     <summary lang="es">Rapier skin por Scarfa, Gade.</summary>
