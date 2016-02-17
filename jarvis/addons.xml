@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.gade" name="Gade's Add-on Repository" version="1.0.3" provider-name="Gade">
+<addon id="repository.gade" name="Gade's Add-on Repository" version="1.0.4" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -28,6 +28,12 @@
 			<info compressed="true">http://github.com/gade01/repository.gade/raw/master/jarvis/addons.xml</info>
 			<checksum>http://github.com/gade01/repository.gade/raw/master/jarvis/addons.xml.md5</checksum>
 			<datadir zip="true">http://github.com/gade01/repository.gade/raw/master/jarvis</datadir>
+			<hashes>true</hashes>
+		</dir>
+		<dir minversion="16.9.0">
+			<info compressed="true">http://github.com/gade01/repository.gade/raw/master/krypton/addons.xml</info>
+			<checksum>http://github.com/gade01/repository.gade/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">http://github.com/gade01/repository.gade/raw/master/krypton</datadir>
 			<hashes>true</hashes>
 		</dir>
 	</extension>
@@ -62,7 +68,7 @@
 	</extension>
 </addon>
 
-<addon id="resource.uisounds.rapier" version="1.0.1" name="Rapier UI Sounds" provider-name="Gade">
+<addon id="resource.uisounds.rapier" version="1.0.2" name="Rapier UI Sounds" provider-name="Gade">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
