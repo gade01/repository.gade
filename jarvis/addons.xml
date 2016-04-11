@@ -82,7 +82,7 @@
 
 <addon
   id="skin.rapier"
-  version="9.5.1"
+  version="9.5.2"
   name="Rapier"
   provider-name="Scarfa, Gade">
   <requires>
