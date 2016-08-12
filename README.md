@@ -1,8 +1,8 @@
 ===============
-repository.gade
+Gade's Add-on Repository
 ===============
 
-This repository add-on allows you to get automatic updates and follow development of the Rapier skin for XBMC/Kodi (https://github.com/gade01/Rapier).
+This repository add-on allows you to get automatic updates and follow development of the Rapier skin and other add-ons for XBMC/Kodi (https://github.com/gade01/Rapier).
 
 How to install this repository:
 
