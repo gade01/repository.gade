@@ -44,7 +44,43 @@
     </extension>
 </addon>
 
-<addon id="resource.images.moviegenreicons.xzener-flat" name="Movie Genre Icons - Xzener's Flat Icons" version="0.0.1" provider-name="Xzener, Gade">
+<addon id="resource.images.moviegenrefanart.wall-blue" name="Movie Genre Fanart - Blue Wall" version="0.0.1" provider-name="TBinfection, Gade">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Blue wall style movie genre fanart backgrounds</summary>
+		<description lang="en">Blue wall style movie genre fanart backgrounds by TBinfection and Gade.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenrefanart.wall-grey" name="Movie Genre Fanart - Grey Wall" version="0.0.1" provider-name="TBinfection, Buff, Gade">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Grey wall style movie genre fanart backgrounds</summary>
+		<description lang="en">Grey wall style movie genre fanart backgrounds by TBinfection, Buff and Gade.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenrefanart.wall-red" name="Movie Genre Fanart - Red Wall" version="0.0.1" provider-name="TBinfection, Gade">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Red wall style movie genre fanart backgrounds</summary>
+		<description lang="en">Red wall style movie genre fanart backgrounds by TBinfection and Gade.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.xzener-flat" name="Movie Genre Icons - Xzener's Flat Icons" version="0.0.3" provider-name="Xzener, Gade">
 	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -56,7 +92,7 @@
 	</extension>
 </addon>
 
-<addon id="resource.images.moviegenreicons.xzener-reflection" name="Movie Genre Icons - Xzener's Reflected Icons" version="0.0.1" provider-name="Xzener, Gade">
+<addon id="resource.images.moviegenreicons.xzener-reflection" name="Movie Genre Icons - Xzener's Reflected Icons" version="0.0.3" provider-name="Xzener, Gade">
 	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -80,7 +116,7 @@
   </extension>
 </addon>
 
-<addon id="skin.rapier" version="9.5.10" name="Rapier" provider-name="Scarfa, Gade">
+<addon id="skin.rapier" version="9.5.13" name="Rapier" provider-name="Scarfa, Gade">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.favourites" version="4.0.9"/>
