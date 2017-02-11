@@ -1,6 +1,7 @@
 <p align="center">
-<img src="http://christiangade.com/xtra/rapier.png" width="350" align="middle">
+<img src="http://inlinestudio.dk/xtra/kodi/logo-crop.png" width="400" align="middle">
 </p>
+
 ## ABOUT RAPIER 9.x FOR KODI 16 JARVIS
 The goal is to provide a simple to use but clean and elegant interface that focuses on efficiency when browsing your media. 
 Important considerations are put on usability, performance, and providing the user with flexibility when it comes to customization.   
@@ -18,7 +19,7 @@ Can be installed through the official Kodi repository or Gade's Development Repo
 By installing Gade's Development Repository you will always automatically receive the newest and freshest development updates of Rapier and my other add-ons. You will still automatically get the official updates.  
 To install this repository, you must do so by following these steps:  
 
-1. [Download the zip file containing Gade's Add-on Repository from Github](https://github.com/gade01/repository.gade/blob/master/repository.gade-1.0.4.zip?raw=true)   
+1. [Download the zip file containing Gade's Add-on Repository from Github](https://github.com/gade01/repository.gade/raw/master/jarvis/repository.gade/repository.gade-1.1.4.zip)   
 2. Start Kodi   
 3. Navigate to settings   
 4. Add-ons   
