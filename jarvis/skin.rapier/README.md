@@ -68,7 +68,6 @@ script.skin.helper.backgrounds v1.0.21
 script.skin.helper.widgets v1.0.22  
 script.globalsearch v2.0.8  
 script.image.resource.select 0.0.9  
-resource.uisounds.rapier 1.0.1  
 resource.images.studios.white 0.0.2  
 
 ## LICENSE
