@@ -192,7 +192,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
             addon_location, addon_target_folder, addon_metadata)
 
     except Exception as exc:
-        print format_exc(sys.exc_info())
+        print(format_exc(sys.exc_info()))
         raise exc
         
     return addon_metadata
@@ -283,11 +283,11 @@ def do_unzip(zip_path, targetdir):
             shutil.copyfileobj(zip_file.open(fileinfo.filename), outputfile)
             outputfile.close()
     zip_file.close()
-    print "UNZIP DONE of file %s" %(zip_path)
+    print("UNZIP DONE of file %s" %(zip_path))
     
 def fetch_addon(addon_location, target_folder, result_slot, temp_folder):
     try:
-        print "Processing %s" %addon_location
+        print("Processing %s" %addon_location)
         if is_url(addon_location):
             addon_metadata = fetch_addon_from_git(
                 addon_location, target_folder, temp_folder)
@@ -321,7 +321,7 @@ def cleanup_dir(dirname):
         subprocess.Popen( cmd, shell=True).wait()
     
     while os.path.isdir(dirname):
-        print "wait for folder deletion"
+        print("wait for folder deletion")
         time.sleep(1)
 
     
