@@ -164,7 +164,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
         if os.path.exists(cur_metadata_path):
             cur_metadata = parse_metadata(cur_metadata_path)
             if cur_metadata.version == addon_metadata.version:
-                print "Addon %s already has version %s on the repo, skipping..." % (addon_metadata.id, addon_metadata.version)
+                print "Addon %s already has version %s on the repo skipping" % (addon_metadata.id, addon_metadata.version)
                 return cur_metadata
         
         #if skin addon, build textures...
