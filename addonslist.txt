@@ -1,4 +1,3 @@
-https://github.com/gade01/repository.gade#master
 https://github.com/gade01/resource.images.moviegenrefanart.wall-blue#master
 https://github.com/gade01/resource.images.moviegenrefanart.wall-grey#master
 https://github.com/gade01/resource.images.moviegenrefanart.wall-red#master
