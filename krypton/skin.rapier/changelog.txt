@@ -1,4 +1,9 @@
 ------------------------
+[B]10.5.32 (24-January-19)[/B]
+------------------------
+- Use music cd art in home screen and player controls dialog.
+
+------------------------
 [B]10.5.31 (20-January-19)[/B]
 ------------------------
 - Added skin setting to show information when fullscreen video is paused.

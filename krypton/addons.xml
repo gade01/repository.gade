@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.gade" name="Gade's Add-on Repository" version="2.0.4" provider-name="Gade">
+<addon id="repository.gade" name="Gade's Add-on Repository" version="2.0.5" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.repository"
 		name="Gade's Add-on Repository">
-		<dir minversion="13.0.0">
-			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/gotham/addons.xml</info>
-			<checksum>https://github.com/gade01/repository.gade/raw/master/gotham/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/gotham</datadir>
-			<hashes>false</hashes>
-		</dir>
-		<dir minversion="14.0.0">
-			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/helix/addons.xml</info>
-			<checksum>https://github.com/gade01/repository.gade/raw/master/helix/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/helix</datadir>
-			<hashes>false</hashes>
-		</dir>
-		<dir minversion="15.0.0">
-			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/isengard/addons.xml</info>
-			<checksum>https://github.com/gade01/repository.gade/raw/master/isengard/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/isengard</datadir>
-			<hashes>false</hashes>
-		</dir>
-		<dir minversion="16.0.0">
-			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/jarvis/addons.xml</info>
-			<checksum>https://github.com/gade01/repository.gade/raw/master/jarvis/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/jarvis</datadir>
-			<hashes>false</hashes>
-		</dir>
 		<dir minversion="17.0.0">
 			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/krypton/addons.xml</info>
 			<checksum>https://github.com/gade01/repository.gade/raw/master/krypton/addons.xml.md5</checksum>
@@ -47,7 +23,7 @@
         <summary lang="en">Gade's Add-on Repository</summary>
         <description lang="en">Get updates and follow development of the Rapier skin and other add-ons for Kodi.</description>
         <platform>all</platform>
-		<news>[B]2.0.4[/B][CR]- Leia not final yet[CR][I]For a full list of changes visit https://github.com/gade01/repository.gade/commits/master[/I]</news>
+		<news>[B]2.0.5[/B][CR]- Cleanup[CR][I]For a full list of changes visit https://github.com/gade01/repository.gade/commits/master[/I]</news>
     </extension>
 </addon>
 
@@ -283,7 +259,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.rapier" version="10.5.31" name="Rapier" provider-name="Scarfa, Gade">
+<addon id="skin.rapier" version="10.5.32" name="Rapier" provider-name="Scarfa, Gade">
   <requires>
     <import addon="xbmc.gui" version="5.12.0"/>
     <import addon="script.favourites" version="4.0.9"/>
@@ -366,7 +342,7 @@
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>[B]10.5.31[/B][CR]- Added skin setting to show information when fullscreen video is paused[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/Krypton/changelog.txt[/I]</news>
+    <news>[B]10.5.32[/B][CR]- Use music cd art in home screen and player controls dialog[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/Krypton/changelog.txt[/I]</news>
   </extension>
 </addon>
 </addons>
