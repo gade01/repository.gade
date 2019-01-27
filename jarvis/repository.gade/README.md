@@ -13,4 +13,4 @@ Browse repo content in browser:
 https://gade01.github.io/repository.gade/
 
 
-[Special Thanks goes to Marcel van der Veldt for codes and repo ideas] (https://github.com/marcelveldt)
+[Special Thanks goes to Marcel van der Veldt for codes and repo ideas](https://github.com/marcelveldt)
