@@ -1,8 +1,14 @@
-https://github.com/gade01/resource.images.moviegenrefanart.wall-blue#master
-https://github.com/gade01/resource.images.moviegenrefanart.wall-grey#master
-https://github.com/gade01/resource.images.moviegenrefanart.wall-red#master
-https://github.com/gade01/resource.images.moviegenreicons.xzener-flat#master
-https://github.com/gade01/resource.images.moviegenreicons.xzener-reflection#master
-https://github.com/gade01/resource.uisounds.rapier#master
-https://github.com/gade01/skin.rapier#master#skin.rapier.leia#Rapier beta for Kodi 18 Leia
-https://github.com/gade01/skin.rapier#Krypton#skin.rapier.krypton#Rapier beta for Kodi 17 Krypton
+https://github.com/gade01/resource.images.moviegenrefanart.wall-blue#master#krypton/resource.images.moviegenrefanart.wall-blue
+https://github.com/gade01/resource.images.moviegenrefanart.wall-blue#master#leia/resource.images.moviegenrefanart.wall-blue
+https://github.com/gade01/resource.images.moviegenrefanart.wall-grey#master#krypton/resource.images.moviegenrefanart.wall-grey
+https://github.com/gade01/resource.images.moviegenrefanart.wall-grey#master#leia/resource.images.moviegenrefanart.wall-grey
+https://github.com/gade01/resource.images.moviegenrefanart.wall-red#master#krypton/resource.images.moviegenrefanart.wall-red
+https://github.com/gade01/resource.images.moviegenrefanart.wall-red#master#leia/resource.images.moviegenrefanart.wall-red
+https://github.com/gade01/resource.images.moviegenreicons.xzener-flat#master#krypton/resource.images.moviegenreicons.xzener-flat
+https://github.com/gade01/resource.images.moviegenreicons.xzener-flat#master#leia/resource.images.moviegenreicons.xzener-flat
+https://github.com/gade01/resource.images.moviegenreicons.xzener-reflection#master#krypton/resource.images.moviegenreicons.xzener-reflection
+https://github.com/gade01/resource.images.moviegenreicons.xzener-reflection#master#leia/resource.images.moviegenreicons.xzener-reflection
+https://github.com/gade01/resource.uisounds.rapier#master#krypton/resource.uisounds.rapier
+https://github.com/gade01/resource.uisounds.rapier#master#leia/resource.uisounds.rapier
+https://github.com/gade01/skin.rapier#Krypton#krypton/skin.rapier
+https://github.com/gade01/skin.rapier#master#leia/skin.rapier
