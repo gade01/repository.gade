@@ -1,4 +1,3 @@
-py addons_xml_generator.py
-py update-directory-structure.py
+py update_repo.py
 
 pause
