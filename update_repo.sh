@@ -1,6 +1,6 @@
 git pull
 
-python ./update_repo.py repository.gade
+python ./update_repo.py leia/repository.gade
 
 python ./update-directory-structure.py
 
