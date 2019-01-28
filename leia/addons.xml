@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.gade" name="Gade's Add-on Repository" version="2.0.5" provider-name="Gade">
+<addon id="repository.gade" name="Gade's Add-on Repository" version="2.0.6" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -18,12 +18,18 @@
 			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/leia</datadir>
 			<hashes>false</hashes>
 		</dir>
+		<dir minversion="18.0.0">
+			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/gade01/repository.gade/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/leia</datadir>
+			<hashes>false</hashes>
+		</dir>
 	</extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Gade's Add-on Repository</summary>
         <description lang="en">Get updates and follow development of the Rapier skin and other add-ons for Kodi.</description>
         <platform>all</platform>
-		<news>[B]2.0.5[/B][CR]- Cleanup[CR][I]For a full list of changes visit https://github.com/gade01/repository.gade/commits/master[/I]</news>
+		<news>[B]2.0.6[/B][CR]- Cleanup[CR][I]For a full list of changes visit https://github.com/gade01/repository.gade/commits/master[/I]</news>
     </extension>
 </addon>
 

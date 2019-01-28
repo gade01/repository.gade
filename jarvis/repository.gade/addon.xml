@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.gade" name="Gade's Add-on Repository" version="1.1.9" provider-name="Gade">
+<addon id="repository.gade" name="Gade's Add-on Repository" version="1.1.10" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -18,6 +18,12 @@
 			<hashes>false</hashes>
 		</dir>
 		<dir minversion="17.9.0">
+			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/gade01/repository.gade/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/leia</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.0.0">
 			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/leia/addons.xml</info>
 			<checksum>https://github.com/gade01/repository.gade/raw/master/leia/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/leia</datadir>
