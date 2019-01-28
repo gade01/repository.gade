@@ -1,8 +1,0 @@
-[B]0.0.3 (30-April-16)[/B]
-- Fix potential texture issues
-
-[B]0.0.2 (26-January-16)[/B]
-- Add info file
-
-[B]0.0.1 (17-September-15)[/B]
-- Initial release
