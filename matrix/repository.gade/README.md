@@ -4,7 +4,7 @@ This repository add-on allows you to get automatic updates and follow developmen
 
 ### How to install this repository:
 
-- [Get the latest release](https://github.com/gade01/repository.gade/raw/master/leia/repository.gade/repository.gade-2.1.0.zip)
+- [Get the latest release](https://github.com/gade01/repository.gade/raw/master/leia/repository.gade/repository.gade-2.1.1.zip)
 - [How to install in XBMC/Kodi](http://kodi.wiki/index.php?title=HOW-TO:Install_an_Add-on_from_a_zip_file)
 
 
