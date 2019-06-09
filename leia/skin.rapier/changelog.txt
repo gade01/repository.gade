@@ -1,4 +1,9 @@
 ------------------------
+[B]11.2.41 (9-June-19)[/B]
+------------------------
+- Bugfixing.
+
+------------------------
 [B]11.2.40 (30-May-19)[/B]
 ------------------------
 - Added skin setting to disable scrollbar trailer playback.
