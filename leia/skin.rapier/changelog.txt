@@ -1,4 +1,19 @@
 ------------------------
+[B]11.2.50 (21-November-19)[/B]
+------------------------
+- Support for Artist Slideshow 2.x / 3.x.
+
+------------------------
+[B]11.2.49 (10-November-19)[/B]
+------------------------
+- Changed Arial font for home screen categories to better support different languages.
+
+------------------------
+[B]11.2.48 (10-October-19)[/B]
+------------------------
+- Adjustments to subtitle dialog.
+
+------------------------
 [B]11.2.47 (24-September-19)[/B]
 ------------------------
 - Fix for album covers when playing music.
