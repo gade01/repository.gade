@@ -1,4 +1,26 @@
 ------------------------
+[B]12.1.8 (17-December-19)[/B]
+------------------------
+- Label 2 for tv shows will now show rating.
+- Fixes for List View.
+
+------------------------
+[B]12.1.7 (9-December-19)[/B]
+------------------------
+- Add check if library nodes exist.
+
+------------------------
+[B]12.1.6 (30-November-19)[/B]
+------------------------
+- It's now possible to switch to Playlist View in all windows, when more than one music or video track is playing.
+- CPU info is now hidden if it's not supported by the system.
+
+------------------------
+[B]12.1.5 (22-November-19)[/B]
+------------------------
+- Added oninfo action in programs windows to open programs information window.
+
+------------------------
 [B]12.1.4 (21-November-19)[/B]
 ------------------------
 - Support for Artist Slideshow 2.x / 3.x.

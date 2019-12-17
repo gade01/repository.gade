@@ -271,7 +271,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.rapier" version="11.2.50" name="Rapier" provider-name="Scarfa, Gade">
+<addon id="skin.rapier" version="11.2.52" name="Rapier" provider-name="Scarfa, Gade">
   <requires>
     <import addon="xbmc.gui" version="5.14.0"/>
     <import addon="script.favourites" version="4.0.9"/>
@@ -357,7 +357,7 @@
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>[B]11.2.50[/B][CR]- Support for Artist Slideshow 2.x / 3.x[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
+    <news>[B]11.2.52[/B][CR]- Label 2 for tv shows will now show rating[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
   </extension>
 </addon>
 </addons>

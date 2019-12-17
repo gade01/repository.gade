@@ -1,4 +1,40 @@
 ------------------------
+[B]10.5.44 (17-December-19)[/B]
+------------------------
+- Label 2 for tv shows will now show rating.
+
+------------------------
+[B]10.5.43 (10-November-19)[/B]
+------------------------
+- Changed Arial font for home screen categories to better support different languages.
+
+------------------------
+[B]10.5.42 (10-October-19)[/B]
+------------------------
+- Adjustments to subtitle dialog.
+
+------------------------
+[B]10.5.41 (8-August-19)[/B]
+------------------------
+- Added support for CoreELEC.
+
+------------------------
+[B]10.5.40 (9-July-19)[/B]
+------------------------
+- Cleanup using expressions.
+- Cleanup Home window code.
+
+------------------------
+[B]10.5.39 (18-June-19)[/B]
+------------------------
+- Added "Information" button to context menu when running programs.
+
+------------------------
+[B]10.5.38 (9-June-19)[/B]
+------------------------
+- Bugfixing.
+
+------------------------
 [B]10.5.37 (30-May-19)[/B]
 ------------------------
 - Added skin setting to disable scrollbar trailer playback.

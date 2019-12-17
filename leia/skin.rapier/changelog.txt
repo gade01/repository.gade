@@ -1,4 +1,14 @@
 ------------------------
+[B]11.2.52 (17-December-19)[/B]
+------------------------
+- Label 2 for tv shows will now show rating.
+
+------------------------
+[B]11.2.51 (30-November-19)[/B]
+------------------------
+- It's now possible to switch to Playlist View in all windows, when more than one music or video track is playing.
+
+------------------------
 [B]11.2.50 (21-November-19)[/B]
 ------------------------
 - Support for Artist Slideshow 2.x / 3.x.
