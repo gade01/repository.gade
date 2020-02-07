@@ -1,4 +1,15 @@
 ------------------------
+[B]12.1.13 (7-February-20)[/B]
+------------------------
+- Add better mouse support to home screen categories (thanks to olympus).
+- Fix label for tv shows in custom widgets (thanks to olympus).
+
+------------------------
+[B]12.1.12 (2-February-20)[/B]
+------------------------
+- Switch to custom window for display of path using text viewer dialog (instead of script.skin.helper.service).
+
+------------------------
 [B]12.1.11 (9-January-20)[/B]
 ------------------------
 - Support for actor info in Extended List View (plugin.video.themoviedb.helper).
