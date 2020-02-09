@@ -1,8 +1,13 @@
 ------------------------
+[B]10.5.46 (7-February-20)[/B]
+------------------------
+- Fix label for tv shows in custom widgets (thanks to olympus).
+- Add better mouse support to home screen categories (thanks to olympus).
+
+------------------------
 [B]10.5.45 (9-January-20)[/B]
 ------------------------
 - Fixed scrollbar in Skin Settings > Supported Add-ons.
-- Fix label for tv shows in custom widgets (thanks to olympus).
 
 ------------------------
 [B]10.5.44 (17-December-19)[/B]
