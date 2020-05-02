@@ -196,7 +196,7 @@
   </extension>
 </addon>
 
-<addon id="script.libraryeditor" name="Library Editor Script" version="0.9.1" provider-name="phil65">
+<addon id="script.libraryeditor" name="Library Editor Script" version="0.9.2" provider-name="phil65">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.simplejson" version="3.17.0+matrix.2"/>

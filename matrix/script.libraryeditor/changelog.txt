@@ -9,4 +9,7 @@ v 0.9.0:
 - lot of fixes
 
 v 0.9.1:
-- update for Python 3
+- support for Python 3
+
+v 0.9.0:
+- support for more info labels
