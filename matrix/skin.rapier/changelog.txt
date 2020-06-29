@@ -1,4 +1,24 @@
 ------------------------
+[B]12.2.7 (28-June-20)[/B]
+------------------------
+- Added Information drop down dialog to the menubar in add-on information window.
+- Added Changelog button in the new drop down dialog in add-on information window.
+- Added button for audio settings in fullscreen music OSD.
+
+------------------------
+[B]12.2.6 (14-June-20)[/B]
+------------------------
+- Updated version code details in system information window.
+- Selected Skin Settings are now available in a dialog in fullscreen music / video windows.
+
+------------------------
+[B]12.2.5 (8-May-20)[/B]
+------------------------
+- Bugfixing.
+- Add support for Multi Weather add-on (weather.multi).
+- Updated translations from Transifex.
+
+------------------------
 [B]12.2.4 (2-May-20)[/B]
 ------------------------
 - Better handling of installed and enabled/disabled add-ons.
@@ -9,8 +29,6 @@
 ------------------------
 - Add "Premiere" / "Finale" / "Live" tags to PVR information window.
 - TV Show Today widget and Upcoming TV Shows widget now use script.embuary.info.
-- Better handling of installed and enabled/disabled add-ons.
-- Greatly improved info for movie sets.
 
 ------------------------
 [B]12.2.2 (18-April-20)[/B]
