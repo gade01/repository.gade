@@ -461,7 +461,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.rapier" version="12.2.13" name="Rapier" provider-name="Scarfa, Gade">
+<addon id="skin.rapier" version="12.2.16" name="Rapier" provider-name="Scarfa, Gade">
   <requires>
     <import addon="xbmc.gui" version="5.15.0"/>
     <import addon="script.favourites" version="4.0.9"/>
@@ -551,7 +551,7 @@
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>[B]12.2.13[/B][CR]- Replaced home screen Movies category submenu "Studios" with "Sets"[CR]- Bugfixing (thanks to Karellen)[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
+    <news>[B]12.2.16[/B][CR]- Added image overlay if add-on is marked broken[CR]- Added Raleway font to better support Russian language[CR]- Add new feature to grey out missing movies in a set or episodes (tag filename with "Missingvideo" or "missingvideo")[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
   </extension>
 </addon>
 </addons>
