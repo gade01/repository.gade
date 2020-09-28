@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.dplaynordic" version="1.2.3" name="Dplay" provider-name="Dis90">
+<requires>
+  <import addon="xbmc.python" version="2.24.0"/>
+  <import addon="script.module.requests" version="2.9.1"/>
+  <import addon="script.module.inputstreamhelper" version="0.2.4"/>
+  <import addon="inputstream.adaptive" version="2.0.4"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="addon.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Dplay</summary>
+  <description lang="en"></description>
+  <disclaimer lang="en"></disclaimer>
+  <assets>
+    <icon>resources/icon.jpg</icon>
+    <fanart>resources/fanart.png</fanart>
+  </assets>
+  <news></news>
+</extension>
+</addon>
+
 <addon id="repository.gade" name="Gade's Add-on Repository" version="2.1.1" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
