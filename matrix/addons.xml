@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.image.mypicsdb" version="14.3.2" name="My Pictures Database" provider-name="Xycl | MikeBZH44 | Alexsolex">
+	<requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.common.plugin.cache" version="2.6.1.1"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>image</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <summary lang="be">Advanced Pictures manager</summary>
+        <summary lang="bg">Разширено управление на снимки</summary>
+        <summary lang="ca">Administrador de imatges avançat</summary>
+        <summary lang="cs">Advanced Pictures manager</summary>
+        <summary lang="da">Udvidet Billedhåndtering</summary>
+        <summary lang="de">Erweiterter Bildermanager</summary>
+        <summary lang="el">Προηγμένη Διαχείριση Εικόνων</summary>
+        <summary lang="en">Advanced Pictures manager</summary>
+        <summary lang="en_NZ">Advanced Pictures manager</summary>
+        <summary lang="en_US">Advanced Pictures manager</summary>
+        <summary lang="es">Gestor avanzado de imágenes</summary>
+        <summary lang="fr">Gestion avancée de la photothèque</summary>
+        <summary lang="fr_CA">Gestionnaire d'images évolué </summary>
+        <summary lang="gl">Xestor Avanzado de Imaxes</summary>
+        <summary lang="he">מנהל תמונות מתקדם</summary>
+        <summary lang="hr">Napredni upravitelj slika</summary>
+        <summary lang="hu">Haladó képkezelő</summary>
+        <summary lang="id">Pengelola Gambar Lanjutan</summary>
+        <summary lang="it">Gestore Immagini Avanzato</summary>
+        <summary lang="ko">고급 사진 관리자</summary>
+        <summary lang="lt">Pažangi nuotraukų tvarkyklė</summary>
+        <summary lang="nl">Afbeeldingen manager</summary>
+        <summary lang="pl">Zaawansowany menedżer obrazów</summary>
+        <summary lang="pt">Gestor de Imagens Avançado</summary>
+        <summary lang="pt_BR">Gerenciador de Imagens Avançado</summary>
+        <summary lang="sk">Pokročilý správca obrázkov</summary>
+        <summary lang="sv">Avancerad bildhanterare</summary>
+        <summary lang="zh">高级图片管理器</summary>
+        <description lang="be">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="bg">Управлявайте снимките си по същия начин както музиката и видеото[CR]Така ще можете да подреждате снимките си по ден/месец/година, ключови думи и други.</description>
+        <description lang="ca">Administra les teves imatges tal com ho fas amb la música i el vídeos[CR]Llavors podràs ordenar les teves fotografies per dia/mes/any, paraules clau i molt més</description>
+        <description lang="cs">Spravujte svoje obrázky úplně stejně jako hudbu a videa[CR]Budete schopni třídit obrázky podle dne/měsíce/roku, tagů a mnohem více.</description>
+        <description lang="da">Håndter dine billeder, som du håndterer musik og videoer[CR]Så vil du kunne sortere dine billeder efter dag/måned/år, nøgleord og meget andet</description>
+        <description lang="de">Verwalte deine Bilder, genau wie deine Musik oder Videos in einer Datenbank.[CR]Dadurch lassen sich Bilder nach Tag/Monat/Jahr, Schlüsselwörtern und mehr sortieren bzw. filtern.</description>
+        <description lang="el">Διαχειριστείτε τις εικόνες σας όπως κάνετε για τις ταινίες και τη μουσική σας[CR]Μετέπειτα θα μπορείτε να ταξινομείτε τις εικόνες σας ανάλογα με την ημερομηνία, το μήνα, το έτος, κάποια λέξη-κλειδί, και πολλά άλλα</description>
+        <description lang="en">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="en_NZ">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="en_US">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="es">Administre sus fotos como lo hace para la música y los videos[CR]Entonces usted será capaz de ordenar las fotos por día/mes/año, por palabras clave y mucho más</description>
+        <description lang="fr">Cette extension permet de gérer les Images sous forme d'une base de données de la même manière que les médiathèques Musique ou Vidéos.[CR]Il est possible de trier les photos par dates, par mots-clés, et bien plus encore !</description>
+        <description lang="fr_CA">Gérez vos images comme votre musique et vos vidéos[CR]Vous pourrez alors trier vos photos par jour/mois/année, mots-clefs et bien plus</description>
+        <description lang="gl">Xestione as súas imaxes do mesmo xeito que cos seus vídeos e música[CR]Poderá ordenar as súas imaxes por día/mes/ano, palabras chaves e moito máis</description>
+        <description lang="he">נהל את התמונות שלך בדיוק כפי שאתה מנהל מוזיקה ווידאו[CR]כך תוכל למיין תמונות לפי יום/חודש/שנה, מילות מפתח ועוד</description>
+        <description lang="hr">Upravljajte vašim slikama, glazbom i video snimkama kao što to radite obično[CR]Tada ćete moći razvrstati vaše slike prema danu/mjesecu/godini, ključnim riječima i još mnog toga</description>
+        <description lang="hu">Kezelje a képeit úgy, mint a zenéit és a videóit[CR]Lehetséges lesz a képek rendezése dátum, kulcsszavak és egyebek alapján.</description>
+        <description lang="it">Gestisci le tue foto come fai per la musica ed i video [CR] Sarai in grado di ordinare le tue foto per giorno/mese/anno, parole chiave e molto altro</description>
+        <description lang="ko">음악과 비디오를 관리하는 것처럼 사진도 관리하세요[CR]그러면 사진을 년/월/일 또는 키워드 등으로 정렬할 수 있습니다.</description>
+        <description lang="lt">Tvarkykite savo nuotraukas kaip tai darote su muzika ir vaizdo įrašais[CR]Tada galėsite rūšiuoti nuotraukas pagal dieną/mėnesį/metus, raktinius žodžius ir daug daugiau</description>
+        <description lang="nl">Toon uw afbeeldingen zoals voor muziek en video’s. Op basis van meta-gegevens in de afbeeldingen kunt een slideshow starten, zoals op datums, categorieën, trefwoorden of andere EXIF/IPTC/XMP tags.</description>
+        <description lang="pl">Zarządzanie obrazami tak jak muzyką i materiałami wideo[CR]Wtyczka umożliwia sortowanie obrazów według dnia, miesiąca, roku, słowach kluczowych i wielu innych.</description>
+        <description lang="pt">Organize as suas imagens tal como faz com as músicas e os vídeos[CR]Assim, conseguirá ordenar as imagens por dia/mês/ano, palavras-chave e muito mais</description>
+        <description lang="pt_BR">Gerencie suas imagens assim como você já faz com músicas e vídeos[CR]Então, você poderá ordenar suas imagens por dia/mês/ano, palavras-chave e muito mais</description>
+        <description lang="sk">Spravujte svoje obrázky ako zvyknete hudbu a videá&#10;Potom budete môcť usporiadať svoje obrázky podľa dňa/mesiaca/roku, kľúčového slova a oveľa viac</description>
+        <description lang="sv">Hantera dina bilder som du gör med musik och film[CR]Du kommer att kunna sortera dina bilder efter dag/månad/år, nyckelord och mycket mer</description>
+        <language></language>
+        <platform>all</platform>
+</extension>
+</addon>
+
 <addon id="plugin.video.dplaynordic" version="1.2.3+matrix.1" name="Dplay" provider-name="Dis90">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
@@ -143,6 +212,285 @@
 		<source>-</source>
 		<email>-</email>
 	</extension>
+</addon>
+
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.1+matrix.2" provider-name="Philipp Temminghoff (phil65)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.youtube.dl" version="14.519.1"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.autocompletion" version="2.0.2"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for all kind of stuff</description>
+		<platform>all</platform>
+		<license>GPL-2.1</license>
+		<source>https://github.com/phil65/script.module.kodi65</source>
+		<news>Python3 ver Adjust to latest core changes, bugfixes, API extensions by scott967</news>
+	</extension>
+	<assets>
+		<icon>resources/icon.png</icon>
+	</assets>
+</addon>
+
+<addon id="script.module.metadatautils"
+       name="Metadata and Artwork module"
+       version="1.0.33"
+       provider-name="marcelveldt and others">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+        <import addon="script.module.beautifulsoup" version="4.0.8" />
+        <import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1" />
+        <import addon="script.module.thetvdb" version="0.0.1" />
+        <import addon="script.module.musicbrainz" version="0.0.1" />
+        <import addon="script.module.simplecache" version="2.0.0"/>
+        <import addon="script.module.arrow" version="0.15.5+matrix.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Metadata and artwork from common sources like TMDB, IMDB, TADB and fanart.tv </summary>
+        <description>The metadata and artwork module for Kodi provides rich metadata, including artwork for various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv. This product uses the TMDb API but is not endorsed or certified by TMDb.
+        </description>
+        <news>
+v1.0.33 (wuff)
+- replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
+
+v1.0.32 (wuff)
+- Remove python requirement for Kodi 18/19 compat
+- Change imdb Top250 parsing from lxml to html.parser
+- replace xbmc.translatePath with xmbcvfs.translatePath
+v1.0.31 (berkhornet)
+- Further fixes for PVR artwork
+v1.0.30 (berkhornet)
+- Kodi 19/Python 3
+- Fixes for PVR artwork
+- Fix display of artwork when manually selecting from TVDB
+- Fixes for animated art and google
+v1.0.29 (wuff)
+- Remove python requirement for Kodi 18/19 compat
+v1.0.28 (wuff)
+- Kodi 19/Python 3 fixes
+v1.0.27 (finkleandeinhorn)
+- update omdb api key
+v1.0.26 (finkleandeinhorn, cartmandos)
+- enable caching of omdb/tmdb data
+- remove duplicate "Title" parameter
+v1.0.25 (marcelveldt)
+- Last version 30 Mar 2018
+        </news>
+        <license>Apache 2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=350315</forum>
+        <source>https://github.com/kodi-community-addons/script.module.metadatautils</source>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.thetvdb"
+       name="The TVDB API v2"
+       version="1.0.29"
+       provider-name="marcelveldt,wuff">
+    <requires>
+	    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+        <import addon="script.module.simplecache" version="2.0.0"/>
+        <import addon="script.module.arrow" version="0.15.5+matrix.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>TheTVDB API v2 python module for Kodi</summary>
+        <description>TheTVDB API v2 python module for Kodi</description>
+        <license>Apache 2.0</license>
+        <source>https://github.com/kodi-community-addons/script.module.thetvdb</source>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.28" provider-name="marcelveldt, wuff">
+    <requires>
+	<!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+        <import addon="script.module.simplecache" version="2.0.0"/>
+        <import addon="script.module.metadatautils" version="1.0.33"/>
+        <import addon="script.module.cherrypy" version="11.0.0"/>
+    </requires>
+
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources\lib\context_animatedart.py">
+              <label>32024</label>
+              <visible>!IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible>
+            </item>
+            <item library="resources\lib\context_pvr.py">
+                <label>32023</label>
+                <description>PVR artwork Configuration</description>
+                <visible>
+                    !IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
+                    [Window.IsActive(MyPVRChannels.xml) |
+                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
+                    Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
+                </visible>
+            </item>
+            <item library="resources\lib\context_music.py">
+                <label>32023</label>
+                <description>Music artwork Configuration</description>
+                <visible>
+                    !IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
+                    [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
+                </visible>
+            </item>
+        </menu>
+    </extension>
+
+    <extension point="xbmc.python.library" library="default.py" />
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+    <extension library="service.py" point="xbmc.service" start="login" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+        <news>
+v1.1.28
+- replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
+
+v1.1.27
+- Replace xbmc.translatePath with xbmcvfs.translatePath for Kodi 19 compat
+
+v1.1.26
+- Remove python dependency for Kodi18/19 compatibility
+- minor fix
+
+v1.1.25
+- Kodi 19/Python 3 compatibility
+- minor fixes
+        </news>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+        <website></website>
+        <source>https://github.com/AnonTester/script.skin.helper.service</source>
+    </extension>
+</addon>
+
+    <addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.24" provider-name="marcelveldt, wuff">
+    <requires>
+	    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension library="service.py" point="xbmc.service" start="login" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+        <news>
+v1.0.24 (2020-09-15)
+- replace ListItem iconImage with setArt
+
+v1.0.23 (2020-09-12)
+- Fix icon
+
+v1.0.22 (2020-09-07)
+- Replace xbmc.translatePath wiht xbmcvfs.translatePath for Kodi 19 compat
+
+v1.0.21 (2020-05-16)
+- Remove python requirement for Kodi 18/19 compat
+
+v1.0.20 (2020-01-02)
+- Kodi 19/Python 3 compatibility
+- default to configured backup folder in restore dialog
+- skip restore if no zip file selected
+
+v1.0.19 (2018-03-30)
+- last version from marcelveldt
+        </news>
+        <language></language>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+        <website></website>
+        <source>https://github.com/AnonTester/script.skin.helper.skinbackup</source>
+    </extension>
+</addon>
+
+    <addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.42" provider-name="marcelveldt,patrick-klein,wuff">
+    <requires>
+	<!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.metadatautils" version="1.0.33" />
+        <import addon="script.module.simplecache" version="2.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="login" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Ready to use widgets for all kind of media types</summary>
+        <description></description>
+	<news>
+Version 1.0.42 (2020-09-13 wuff)
+* replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
+
+Version 1.0.41 (2020-09-07 wuff)
+* Fix icons
+
+Version 1.0.40 (2020-05-16 wuff)
+* Remove python requirement for Kodi 18/19 compat
+
+Version 1.0.39 (2019-12-24 wuff)
+* Python 3/Kodi 19 compatibility fixes
+
+Version 1.0.38 (2019-02-25 patrick-klein)
+* similar score weights tweaks
+* other fixes and updates
+
+Version 1.0.37
+* last update from marcelveldt
+</news>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+        <website></website>
+        <source>https://github.com/AnonTester/script.skin.helper.widgets</source>
+    </extension>
+</addon>
+
+<addon id="script.user.rating"
+    name="User Rating"
+    version="1.0.3"
+    provider-name="Regss">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension point="xbmc.service" library="service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Easy rate media using star rating system</summary>
+        <summary lang="pl">Łatwo oceniaj swoje zasoby za pomocą systemu gwiazdek</summary>
+        <description lang="en">Help rate your media showing box with star rating system</description>
+        <description lang="pl">Pomaga oceniać posiadane zasoby za pomocą systemu gwiazdek</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=264729</forum>
+        <source>https://github.com/Regss/script.user.rating</source>
+        <email>regss84@gmail.com</email>
+    </extension>
 </addon>
 
 <addon id="skin.rapier" version="12.2.21" name="Rapier" provider-name="Scarfa, Gade">
