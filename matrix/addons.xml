@@ -69,28 +69,6 @@
 </extension>
 </addon>
 
-<addon id="plugin.video.dplaynordic" version="1.2.3+matrix.1" name="Dplay" provider-name="Dis90">
-<requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-  <import addon="script.module.requests" version="2.9.1"/>
-  <import addon="script.module.inputstreamhelper" version="0.2.4"/>
-  <import addon="inputstream.adaptive" version="2.0.4"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="addon.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-  <summary lang="en">Dplay</summary>
-  <description lang="en"></description>
-  <disclaimer lang="en"></disclaimer>
-  <assets>
-    <icon>resources/icon.jpg</icon>
-    <fanart>resources/fanart.png</fanart>
-  </assets>
-  <news></news>
-</extension>
-</addon>
-
 <addon id="repository.gade" name="Gade's Add-on Repository" version="2.1.2" provider-name="Gade">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -238,24 +216,41 @@
 
 <addon id="script.module.metadatautils"
        name="Metadata and Artwork module"
-       version="1.0.33"
+       version="1.0.38"
        provider-name="marcelveldt and others">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0"/> -->
         <import addon="script.module.requests" version="2.22.0+matrix.1"/>
-        <import addon="script.module.beautifulsoup" version="4.0.8" />
-        <import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1" />
+        <import addon="script.module.beautifulsoup" version="3.0.8" />
+        <import addon="script.module.beautifulsoup4" version="4.9.3+matrix.1" />
         <import addon="script.module.thetvdb" version="0.0.1" />
-        <import addon="script.module.musicbrainz" version="0.0.1" />
+        <import addon="script.module.musicbrainz" version="0.0.1"/>
         <import addon="script.module.simplecache" version="2.0.0"/>
         <import addon="script.module.arrow" version="0.15.5+matrix.1"/>
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary>Metadata and artwork from common sources like TMDB, IMDB, TADB and fanart.tv </summary>
-        <description>The metadata and artwork module for Kodi provides rich metadata, including artwork for various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv. This product uses the TMDb API but is not endorsed or certified by TMDb.
-        </description>
+        <summary lang="en">Metadata and artwork from common sources like TMDB, IMDB, TADB, OMDB and fanart.tv </summary>
+		<summary lang="es">Metadatos e ilustraciones de fuentes comunes como TMDB, IMDB, TADB, OMDB y fanart.tv </summary>
+        <description lang="en">The metadata and artwork module for Kodi provides rich metadata, including artwork for various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv. This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+		<description lang="es">El módulo de metadatos e ilustraciones para Kodi proporciona metadatos enriquecidos, que incluyen ilustraciones paravarios metatipos al raspar (y almacenar en caché) esta información se extrae de sitios como TMDB, musicbrainz and fanart.tv.[CR][CR]Este producto utiliza la API de TMDb pero no está avalado ni certificado por TMDb</description>
         <news>
+v1.0.38
+- fix for error 'sys' is not defined for extrafanart
+- fix for google
+- fix for colecting imdb.250 (movie and tv)
+- add new rotentomatoes info from omdb
+v1.0.37
+- Smal fix for theaudiodb scraper
+v1.0.36
+- Fix for theaudiodb scraper,Add some new Art thumb and label
+
+v1.0.35 (wuff)
+- Remove BeautifulSoup3 dependency and use BeautifulSoup4 on Kodi 18 and 19 instead
+
+v1.0.34 (wuff)
+- Set BeautifulSoup3 and MusicBrainz dependency as optional to allow install on Matrix
+
 v1.0.33 (wuff)
 - replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
 
@@ -286,7 +281,34 @@ v1.0.25 (marcelveldt)
         <forum>https://forum.kodi.tv/showthread.php?tid=350315</forum>
         <source>https://github.com/kodi-community-addons/script.module.metadatautils</source>
         <platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
     </extension>
+</addon>
+
+<addon id="script.module.musicbrainz"
+       name="Musicbrainz NGS webservice python bindings"
+       version="0.6.0"
+       provider-name="marcelveldt">
+  <requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python bindings for Musicbrainz' NGS webservice</summary>
+    <description>Kodi module library for the Python bindings for Musicbrainz' NGS webservice developed by alastair.</description>
+    <license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+    <source>https://github.com/marcelveldt/script.module.musicbrainz</source>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="script.module.thetvdb"
@@ -310,14 +332,14 @@ v1.0.25 (marcelveldt)
     </extension>
 </addon>
 
-    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.28" provider-name="marcelveldt, wuff">
+    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.31" provider-name="marcelveldt, wuff">
     <requires>
 	<!-- <import addon="xbmc.python" version="3.0.0"/> -->
         <import addon="xbmc.addon" version="12.0.0"/>
         <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
         <import addon="script.module.simplecache" version="2.0.0"/>
         <import addon="script.module.metadatautils" version="1.0.33"/>
-        <import addon="script.module.cherrypy" version="11.0.0"/>
+        <import addon="script.module.cherrypy" version="17.0.0"/>
     </requires>
 
     <extension point="kodi.context.item">
@@ -355,6 +377,16 @@ v1.0.25 (marcelveldt)
         <summary lang="en">Helper service for Kodi skins</summary>
         <description>Helper service for Kodi skins</description>
         <news>
+v1.1.31
+- fix urllib.parse vs urlparse in utils for Kodi 18
+- add commits from Angelinas1
+
+v1.1.30
+- fix module import of context menu items
+
+v1.1.29
+- compatibility change for CherryPy 17.4.2 and bump version requirement
+
 v1.1.28
 - replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
 
@@ -378,7 +410,7 @@ v1.1.25
     </extension>
 </addon>
 
-    <addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.24" provider-name="marcelveldt, wuff">
+    <addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.28" provider-name="marcelveldt, wuff">
     <requires>
 	    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -390,6 +422,19 @@ v1.1.25
         <summary lang="en">Helper service for Kodi skins</summary>
         <description>Helper service for Kodi skins</description>
         <news>
+v1.0.28 (2020-10-10)
+- Change is not to != in colorthemes (Wanilton)
+
+v1.0.27 (2020-10-10)
+- Limit Android zipfile patch to Kodi 18 only
+
+v1.0.26 (2020-10-05)
+- Add Android zipfile patch (https://github.com/robweber/xbmcbackup/issues/158)
+
+v1.0.25 (2020-10-04)
+- remove duplicate slash in zip path preventing zip to be copied in backup
+- sort backups in descending order and only show backupdate
+
 v1.0.24 (2020-09-15)
 - replace ListItem iconImage with setArt
 
