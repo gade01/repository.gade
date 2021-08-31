@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.image.mypicsdb" version="14.3.2" name="My Pictures Database" provider-name="Xycl | MikeBZH44 | Alexsolex">
+	<requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.common.plugin.cache" version="2.6.1.1"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>image</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <summary lang="be">Advanced Pictures manager</summary>
+        <summary lang="bg">Разширено управление на снимки</summary>
+        <summary lang="ca">Administrador de imatges avançat</summary>
+        <summary lang="cs">Advanced Pictures manager</summary>
+        <summary lang="da">Udvidet Billedhåndtering</summary>
+        <summary lang="de">Erweiterter Bildermanager</summary>
+        <summary lang="el">Προηγμένη Διαχείριση Εικόνων</summary>
+        <summary lang="en">Advanced Pictures manager</summary>
+        <summary lang="en_NZ">Advanced Pictures manager</summary>
+        <summary lang="en_US">Advanced Pictures manager</summary>
+        <summary lang="es">Gestor avanzado de imágenes</summary>
+        <summary lang="fr">Gestion avancée de la photothèque</summary>
+        <summary lang="fr_CA">Gestionnaire d'images évolué </summary>
+        <summary lang="gl">Xestor Avanzado de Imaxes</summary>
+        <summary lang="he">מנהל תמונות מתקדם</summary>
+        <summary lang="hr">Napredni upravitelj slika</summary>
+        <summary lang="hu">Haladó képkezelő</summary>
+        <summary lang="id">Pengelola Gambar Lanjutan</summary>
+        <summary lang="it">Gestore Immagini Avanzato</summary>
+        <summary lang="ko">고급 사진 관리자</summary>
+        <summary lang="lt">Pažangi nuotraukų tvarkyklė</summary>
+        <summary lang="nl">Afbeeldingen manager</summary>
+        <summary lang="pl">Zaawansowany menedżer obrazów</summary>
+        <summary lang="pt">Gestor de Imagens Avançado</summary>
+        <summary lang="pt_BR">Gerenciador de Imagens Avançado</summary>
+        <summary lang="sk">Pokročilý správca obrázkov</summary>
+        <summary lang="sv">Avancerad bildhanterare</summary>
+        <summary lang="zh">高级图片管理器</summary>
+        <description lang="be">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="bg">Управлявайте снимките си по същия начин както музиката и видеото[CR]Така ще можете да подреждате снимките си по ден/месец/година, ключови думи и други.</description>
+        <description lang="ca">Administra les teves imatges tal com ho fas amb la música i el vídeos[CR]Llavors podràs ordenar les teves fotografies per dia/mes/any, paraules clau i molt més</description>
+        <description lang="cs">Spravujte svoje obrázky úplně stejně jako hudbu a videa[CR]Budete schopni třídit obrázky podle dne/měsíce/roku, tagů a mnohem více.</description>
+        <description lang="da">Håndter dine billeder, som du håndterer musik og videoer[CR]Så vil du kunne sortere dine billeder efter dag/måned/år, nøgleord og meget andet</description>
+        <description lang="de">Verwalte deine Bilder, genau wie deine Musik oder Videos in einer Datenbank.[CR]Dadurch lassen sich Bilder nach Tag/Monat/Jahr, Schlüsselwörtern und mehr sortieren bzw. filtern.</description>
+        <description lang="el">Διαχειριστείτε τις εικόνες σας όπως κάνετε για τις ταινίες και τη μουσική σας[CR]Μετέπειτα θα μπορείτε να ταξινομείτε τις εικόνες σας ανάλογα με την ημερομηνία, το μήνα, το έτος, κάποια λέξη-κλειδί, και πολλά άλλα</description>
+        <description lang="en">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="en_NZ">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="en_US">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
+        <description lang="es">Administre sus fotos como lo hace para la música y los videos[CR]Entonces usted será capaz de ordenar las fotos por día/mes/año, por palabras clave y mucho más</description>
+        <description lang="fr">Cette extension permet de gérer les Images sous forme d'une base de données de la même manière que les médiathèques Musique ou Vidéos.[CR]Il est possible de trier les photos par dates, par mots-clés, et bien plus encore !</description>
+        <description lang="fr_CA">Gérez vos images comme votre musique et vos vidéos[CR]Vous pourrez alors trier vos photos par jour/mois/année, mots-clefs et bien plus</description>
+        <description lang="gl">Xestione as súas imaxes do mesmo xeito que cos seus vídeos e música[CR]Poderá ordenar as súas imaxes por día/mes/ano, palabras chaves e moito máis</description>
+        <description lang="he">נהל את התמונות שלך בדיוק כפי שאתה מנהל מוזיקה ווידאו[CR]כך תוכל למיין תמונות לפי יום/חודש/שנה, מילות מפתח ועוד</description>
+        <description lang="hr">Upravljajte vašim slikama, glazbom i video snimkama kao što to radite obično[CR]Tada ćete moći razvrstati vaše slike prema danu/mjesecu/godini, ključnim riječima i još mnog toga</description>
+        <description lang="hu">Kezelje a képeit úgy, mint a zenéit és a videóit[CR]Lehetséges lesz a képek rendezése dátum, kulcsszavak és egyebek alapján.</description>
+        <description lang="it">Gestisci le tue foto come fai per la musica ed i video [CR] Sarai in grado di ordinare le tue foto per giorno/mese/anno, parole chiave e molto altro</description>
+        <description lang="ko">음악과 비디오를 관리하는 것처럼 사진도 관리하세요[CR]그러면 사진을 년/월/일 또는 키워드 등으로 정렬할 수 있습니다.</description>
+        <description lang="lt">Tvarkykite savo nuotraukas kaip tai darote su muzika ir vaizdo įrašais[CR]Tada galėsite rūšiuoti nuotraukas pagal dieną/mėnesį/metus, raktinius žodžius ir daug daugiau</description>
+        <description lang="nl">Toon uw afbeeldingen zoals voor muziek en video’s. Op basis van meta-gegevens in de afbeeldingen kunt een slideshow starten, zoals op datums, categorieën, trefwoorden of andere EXIF/IPTC/XMP tags.</description>
+        <description lang="pl">Zarządzanie obrazami tak jak muzyką i materiałami wideo[CR]Wtyczka umożliwia sortowanie obrazów według dnia, miesiąca, roku, słowach kluczowych i wielu innych.</description>
+        <description lang="pt">Organize as suas imagens tal como faz com as músicas e os vídeos[CR]Assim, conseguirá ordenar as imagens por dia/mês/ano, palavras-chave e muito mais</description>
+        <description lang="pt_BR">Gerencie suas imagens assim como você já faz com músicas e vídeos[CR]Então, você poderá ordenar suas imagens por dia/mês/ano, palavras-chave e muito mais</description>
+        <description lang="sk">Spravujte svoje obrázky ako zvyknete hudbu a videá&#10;Potom budete môcť usporiadať svoje obrázky podľa dňa/mesiaca/roku, kľúčového slova a oveľa viac</description>
+        <description lang="sv">Hantera dina bilder som du gör med musik och film[CR]Du kommer att kunna sortera dina bilder efter dag/månad/år, nyckelord och mycket mer</description>
+        <language></language>
+        <platform>all</platform>
+</extension>
+</addon>
+
+<addon id="repository.gade" name="Gade's Add-on Repository" version="2.2.0" provider-name="Gade">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository"
+		name="Gade's Add-on Repository">
+		<dir minversion="17.0.0" maxversion="17.9.0">
+			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/krypton/addons.xml</info>
+			<checksum>https://github.com/gade01/repository.gade/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/krypton</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.0.0" maxversion="18.9.0">
+			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/gade01/repository.gade/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/leia</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0" maxversion="19.9.0">
+			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/matrix/addons.xml</info>
+			<checksum>https://github.com/gade01/repository.gade/raw/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/matrix</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.9.1" maxversion="20.9.0">
+			<info compressed="false">https://github.com/gade01/repository.gade/raw/master/nexus/addons.xml</info>
+			<checksum>https://github.com/gade01/repository.gade/raw/master/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/gade01/repository.gade/raw/master/nexus</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Gade's Add-on Repository</summary>
+        <description lang="en">Get updates and follow development of the Rapier skin and other add-ons for Kodi.</description>
+        <platform>all</platform>
+		<news>[B]2.2.0[/B][CR]- Kodi 20 Nexus[CR][I]For a full list of changes visit https://github.com/gade01/repository.gade/commits/master[/I]</news>
+    </extension>
+</addon>
+
+<addon id="resource.images.moviegenrefanart.wall-blue" name="Movie Genre Fanart - Blue Wall" version="0.0.1" provider-name="TBinfection, Gade">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Blue wall style movie genre fanart backgrounds</summary>
+		<description lang="en">Blue wall style movie genre fanart backgrounds by TBinfection and Gade.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenrefanart.wall-grey" name="Movie Genre Fanart - Grey Wall" version="0.0.1" provider-name="TBinfection, Buff, Gade">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Grey wall style movie genre fanart backgrounds</summary>
+		<description lang="en">Grey wall style movie genre fanart backgrounds by TBinfection, Buff and Gade.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenrefanart.wall-red" name="Movie Genre Fanart - Red Wall" version="0.0.1" provider-name="TBinfection, Gade">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Red wall style movie genre fanart backgrounds</summary>
+		<description lang="en">Red wall style movie genre fanart backgrounds by TBinfection and Gade.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.xzener-flat" name="Movie Genre Icons - Xzener's Flat Icons" version="0.0.3" provider-name="Xzener, Gade">
+	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Xcener's Flat Movie Genre Icons</summary>
+		<description lang="en">Transparent flat Movie Genre Icons made by Xzener.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.xzener-reflection" name="Movie Genre Icons - Xzener's Reflected Icons" version="0.0.3" provider-name="Xzener, Gade">
+	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Xcener's Reflected Movie Genre Icons</summary>
+		<description lang="en">Transparent Movie Genre Icons with reflection made by Xzener.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.uisounds.rapier" version="1.0.2" name="Rapier UI Sounds" provider-name="Gade">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Rapier GUI sounds</summary>
+    <description lang="en">Rapier GUI sounds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.libraryeditor" name="Library Editor Script" version="0.9.2" provider-name="phil65">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Library Editor Script</summary>
+		<description lang="en">This script makes it possible to edit movie details manually from within XBMC. Needs Skin Support</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>-</forum>
+		<source>-</source>
+		<email>-</email>
+	</extension>
+</addon>
+
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.1+matrix.2" provider-name="Philipp Temminghoff (phil65)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.youtube.dl" version="14.519.1"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.autocompletion" version="2.0.2"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for all kind of stuff</description>
+		<platform>all</platform>
+		<license>GPL-2.1</license>
+		<source>https://github.com/phil65/script.module.kodi65</source>
+		<news>Python3 ver Adjust to latest core changes, bugfixes, API extensions by scott967</news>
+	</extension>
+	<assets>
+		<icon>resources/icon.png</icon>
+	</assets>
+</addon>
+
+<addon id="script.module.metadatautils"
+       name="Metadata and Artwork module"
+       version="1.0.38"
+       provider-name="marcelveldt and others">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8" />
+        <import addon="script.module.beautifulsoup4" version="4.9.3+matrix.1" />
+        <import addon="script.module.thetvdb" version="0.0.1" />
+        <import addon="script.module.musicbrainz" version="0.0.1"/>
+        <import addon="script.module.simplecache" version="2.0.0"/>
+        <import addon="script.module.arrow" version="0.15.5+matrix.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Metadata and artwork from common sources like TMDB, IMDB, TADB, OMDB and fanart.tv </summary>
+		<summary lang="es">Metadatos e ilustraciones de fuentes comunes como TMDB, IMDB, TADB, OMDB y fanart.tv </summary>
+        <description lang="en">The metadata and artwork module for Kodi provides rich metadata, including artwork for various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv. This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+		<description lang="es">El módulo de metadatos e ilustraciones para Kodi proporciona metadatos enriquecidos, que incluyen ilustraciones paravarios metatipos al raspar (y almacenar en caché) esta información se extrae de sitios como TMDB, musicbrainz and fanart.tv.[CR][CR]Este producto utiliza la API de TMDb pero no está avalado ni certificado por TMDb</description>
+        <news>
+v1.0.38
+- fix for error 'sys' is not defined for extrafanart
+- fix for google
+- fix for colecting imdb.250 (movie and tv)
+- add new rotentomatoes info from omdb
+v1.0.37
+- Smal fix for theaudiodb scraper
+v1.0.36
+- Fix for theaudiodb scraper,Add some new Art thumb and label
+
+v1.0.35 (wuff)
+- Remove BeautifulSoup3 dependency and use BeautifulSoup4 on Kodi 18 and 19 instead
+
+v1.0.34 (wuff)
+- Set BeautifulSoup3 and MusicBrainz dependency as optional to allow install on Matrix
+
+v1.0.33 (wuff)
+- replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
+
+v1.0.32 (wuff)
+- Remove python requirement for Kodi 18/19 compat
+- Change imdb Top250 parsing from lxml to html.parser
+- replace xbmc.translatePath with xmbcvfs.translatePath
+v1.0.31 (berkhornet)
+- Further fixes for PVR artwork
+v1.0.30 (berkhornet)
+- Kodi 19/Python 3
+- Fixes for PVR artwork
+- Fix display of artwork when manually selecting from TVDB
+- Fixes for animated art and google
+v1.0.29 (wuff)
+- Remove python requirement for Kodi 18/19 compat
+v1.0.28 (wuff)
+- Kodi 19/Python 3 fixes
+v1.0.27 (finkleandeinhorn)
+- update omdb api key
+v1.0.26 (finkleandeinhorn, cartmandos)
+- enable caching of omdb/tmdb data
+- remove duplicate "Title" parameter
+v1.0.25 (marcelveldt)
+- Last version 30 Mar 2018
+        </news>
+        <license>Apache 2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=350315</forum>
+        <source>https://github.com/kodi-community-addons/script.module.metadatautils</source>
+        <platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+    </extension>
+</addon>
+
+<addon id="script.module.musicbrainz"
+       name="Musicbrainz NGS webservice python bindings"
+       version="0.6.0"
+       provider-name="marcelveldt">
+  <requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python bindings for Musicbrainz' NGS webservice</summary>
+    <description>Kodi module library for the Python bindings for Musicbrainz' NGS webservice developed by alastair.</description>
+    <license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+    <source>https://github.com/marcelveldt/script.module.musicbrainz</source>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.thetvdb"
+       name="The TVDB API v2"
+       version="1.0.29"
+       provider-name="marcelveldt,wuff">
+    <requires>
+	    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+        <import addon="script.module.simplecache" version="2.0.0"/>
+        <import addon="script.module.arrow" version="0.15.5+matrix.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>TheTVDB API v2 python module for Kodi</summary>
+        <description>TheTVDB API v2 python module for Kodi</description>
+        <license>Apache 2.0</license>
+        <source>https://github.com/kodi-community-addons/script.module.thetvdb</source>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.31" provider-name="marcelveldt, wuff">
+    <requires>
+	<!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+        <import addon="script.module.simplecache" version="2.0.0"/>
+        <import addon="script.module.metadatautils" version="1.0.33"/>
+        <import addon="script.module.cherrypy" version="17.0.0"/>
+    </requires>
+
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources\lib\context_animatedart.py">
+              <label>32024</label>
+              <visible>!IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible>
+            </item>
+            <item library="resources\lib\context_pvr.py">
+                <label>32023</label>
+                <description>PVR artwork Configuration</description>
+                <visible>
+                    !IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
+                    [Window.IsActive(MyPVRChannels.xml) |
+                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
+                    Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
+                </visible>
+            </item>
+            <item library="resources\lib\context_music.py">
+                <label>32023</label>
+                <description>Music artwork Configuration</description>
+                <visible>
+                    !IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
+                    [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
+                </visible>
+            </item>
+        </menu>
+    </extension>
+
+    <extension point="xbmc.python.library" library="default.py" />
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+    <extension library="service.py" point="xbmc.service" start="login" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+        <news>
+v1.1.31
+- fix urllib.parse vs urlparse in utils for Kodi 18
+- add commits from Angelinas1
+
+v1.1.30
+- fix module import of context menu items
+
+v1.1.29
+- compatibility change for CherryPy 17.4.2 and bump version requirement
+
+v1.1.28
+- replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
+
+v1.1.27
+- Replace xbmc.translatePath with xbmcvfs.translatePath for Kodi 19 compat
+
+v1.1.26
+- Remove python dependency for Kodi18/19 compatibility
+- minor fix
+
+v1.1.25
+- Kodi 19/Python 3 compatibility
+- minor fixes
+        </news>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+        <website></website>
+        <source>https://github.com/AnonTester/script.skin.helper.service</source>
+    </extension>
+</addon>
+
+    <addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.28" provider-name="marcelveldt, wuff">
+    <requires>
+	    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension library="service.py" point="xbmc.service" start="login" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+        <news>
+v1.0.28 (2020-10-10)
+- Change is not to != in colorthemes (Wanilton)
+
+v1.0.27 (2020-10-10)
+- Limit Android zipfile patch to Kodi 18 only
+
+v1.0.26 (2020-10-05)
+- Add Android zipfile patch (https://github.com/robweber/xbmcbackup/issues/158)
+
+v1.0.25 (2020-10-04)
+- remove duplicate slash in zip path preventing zip to be copied in backup
+- sort backups in descending order and only show backupdate
+
+v1.0.24 (2020-09-15)
+- replace ListItem iconImage with setArt
+
+v1.0.23 (2020-09-12)
+- Fix icon
+
+v1.0.22 (2020-09-07)
+- Replace xbmc.translatePath wiht xbmcvfs.translatePath for Kodi 19 compat
+
+v1.0.21 (2020-05-16)
+- Remove python requirement for Kodi 18/19 compat
+
+v1.0.20 (2020-01-02)
+- Kodi 19/Python 3 compatibility
+- default to configured backup folder in restore dialog
+- skip restore if no zip file selected
+
+v1.0.19 (2018-03-30)
+- last version from marcelveldt
+        </news>
+        <language></language>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+        <website></website>
+        <source>https://github.com/AnonTester/script.skin.helper.skinbackup</source>
+    </extension>
+</addon>
+
+    <addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.42" provider-name="marcelveldt,patrick-klein,wuff">
+    <requires>
+	<!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.metadatautils" version="1.0.33" />
+        <import addon="script.module.simplecache" version="2.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="login" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Ready to use widgets for all kind of media types</summary>
+        <description></description>
+	<news>
+Version 1.0.42 (2020-09-13 wuff)
+* replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
+
+Version 1.0.41 (2020-09-07 wuff)
+* Fix icons
+
+Version 1.0.40 (2020-05-16 wuff)
+* Remove python requirement for Kodi 18/19 compat
+
+Version 1.0.39 (2019-12-24 wuff)
+* Python 3/Kodi 19 compatibility fixes
+
+Version 1.0.38 (2019-02-25 patrick-klein)
+* similar score weights tweaks
+* other fixes and updates
+
+Version 1.0.37
+* last update from marcelveldt
+</news>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+        <website></website>
+        <source>https://github.com/AnonTester/script.skin.helper.widgets</source>
+    </extension>
+</addon>
+
+<addon id="script.user.rating"
+    name="User Rating"
+    version="1.0.3"
+    provider-name="Regss">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension point="xbmc.service" library="service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Easy rate media using star rating system</summary>
+        <summary lang="pl">Łatwo oceniaj swoje zasoby za pomocą systemu gwiazdek</summary>
+        <description lang="en">Help rate your media showing box with star rating system</description>
+        <description lang="pl">Pomaga oceniać posiadane zasoby za pomocą systemu gwiazdek</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=264729</forum>
+        <source>https://github.com/Regss/script.user.rating</source>
+        <email>regss84@gmail.com</email>
+    </extension>
+</addon>
+
+<addon id="skin.rapier" version="12.9.0" name="Rapier" provider-name="Scarfa, Gade">
+  <requires>
+    <import addon="xbmc.gui" version="5.15.0"/>
+    <import addon="script.favourites" version="4.0.9"/>
+	<!--<import addon="script.skin.helper.service" version="1.1.3"/>-->
+	<import addon="script.embuary.helper" version="2.0.2"/>
+	<import addon="resource.images.studios.white" version="0.0.2"/>
+  </requires>
+  <extension point="xbmc.gui.skin" effectslowdown="0.75" debugging="false">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</license>
+    <forum>https://forum.kodi.tv/forumdisplay.php?fid=120</forum>
+    <website>https://kodi.wiki/view/Add-on:Rapier</website>
+    <source>https://github.com/gade01/Rapier</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <banner>resources/banner.jpg</banner>
+      <clearlogo>resources/clearlogo.png</clearlogo>
+      <screenshot>resources/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshot-02.jpg</screenshot>
+      <screenshot>resources/screenshot-03.jpg</screenshot>
+      <screenshot>resources/screenshot-04.jpg</screenshot>
+      <screenshot>resources/screenshot-05.jpg</screenshot>
+      <screenshot>resources/screenshot-06.jpg</screenshot>
+      <screenshot>resources/screenshot-07.jpg</screenshot>
+      <screenshot>resources/screenshot-08.jpg</screenshot>
+      <screenshot>resources/screenshot-09.jpg</screenshot>
+      <screenshot>resources/screenshot-10.jpg</screenshot>
+    </assets>
+    <news>[B]12.9.0[/B][CR]- Add show/hide password button in keyboard dialog[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
+    <summary lang="bg_BG">Rapier от Scarfa и Gade.</summary>
+    <summary lang="cs_CZ">Grafický vzhled vytvořili Scarfa a Gade.</summary>
+    <summary lang="da_DK">Rapier skin af Scarfa, Gade.</summary>
+    <summary lang="de_DE">Rapier-Skin von Scarfa, Gade.</summary>
+    <summary lang="el_GR">Rapier από τον Scarfa, Gade.</summary>
+    <summary lang="en_AU">Rapier skin by Scarfa, Gade.</summary>
+    <summary lang="en_GB">Rapier skin by Scarfa, Gade.</summary>
+    <summary lang="en_NZ">Rapier skin by Scarfa, Gade.</summary>
+    <summary lang="en_US">Rapier skin by Scarfa, Gade.</summary>
+    <summary lang="es_ES">Rapier skin por Scarfa, Gade.</summary>
+    <summary lang="fi_FI">Rapier-ulkoasu. Tekijöinä Scarfa ja Gade.</summary>
+    <summary lang="fr_CA">Habillage Rapier par Scarfa, Gade.</summary>
+    <summary lang="fr_FR">Habillage Rapier par Scarfa, Gade.</summary>
+    <summary lang="gl_ES">Tema Rapier por Scarfa, Gade.</summary>
+    <summary lang="he_IL">המעטפת Rapier של Scarfa ו־Gade.</summary>
+    <summary lang="hu_HU">Rapier felszín Scarfa-tól és Gade-től</summary>
+    <summary lang="is_IS">Rapier skinn eftir Scarfa, Gade.</summary>
+    <summary lang="it_IT">Skin Rapier di Scarfa, Gade.</summary>
+    <summary lang="ja_JP">Rapier skin by Scarfa, Gade.</summary>
+    <summary lang="ko_KR">Rapier 스킨 제작: Scarfa, Gade.</summary>
+    <summary lang="lt_LT">Rapier teminė išvaizda, sukurta Scarfa, Gade.</summary>
+    <summary lang="ms_MY">Kulit Rapier oleh Scarfa, Gade.</summary>
+    <summary lang="nb_NO">Rapier skin av Scarfa, Gade.</summary>
+    <summary lang="nl_NL">Rapier skin door Scarfa, Gade.</summary>
+    <summary lang="pl_PL">Skóra Rapier autorstwa Scarfa, Gade.</summary>
+    <summary lang="pt_BR">Rapier skin por Scarfa,Gade.</summary>
+    <summary lang="pt_PT">Tema Rapier por Scarfa, Gade.</summary>
+    <summary lang="ro_RO">Costumul Rapier de Scarfa, Gade.</summary>
+    <summary lang="ru_RU">Обложка Rapier от Scarfa, Gade.</summary>
+    <summary lang="sk_SK">Rapier vzhľad od Scarfa, Gade.</summary>
+    <summary lang="th_TH">Rapier skin โดย Scarfa, Gade.</summary>
+    <summary lang="zh_CN">Scarfa、Gade 设计的 Rapier 皮肤。</summary>
+    <summary lang="zh_TW">由Scarfa, Gade所開發的Rapier佈景主題</summary>
+    <description lang="bg_BG">Обликът е създаден с цел да предостави лесен, изчистен и елегантен интерфейс, фокусиран върху ефикасност при преглеждане на мултимедийното съдържание. Предвидени са множество опции за персонализиране. Стреми се към поддържане на всички функции на Kodi, стига те да не се разминават с целта на облика.</description>
+    <description lang="da_DK">Målet er at levere en grænseflade, der er simpel at anvende, ren, elegant og fokuserer på effektivitet, når du browser dine medier. Vigtige overvejelser er gjort i forbindelse med brugervenlighed, ydelse og levering af fleksibilitet for brugeren, når det kommer til tilpasning. Rapier forsøger at understøtte alle de nyeste funktioner, Kodi har at tilbyde, så længe det stemmer overens med skin'ets design-mål.</description>
+    <description lang="de_DE">Ziel war es, ein einfaches zu benutzendes aber klares und Elegantes Interface zu erschaffen, das sich auf Effizienz beim durchsuchen deiner Medien konzentriert. Besonderes Augenmerk wurde auf Benutzerfreundlichkeit, Performance und dem Benutzer eine möglichst hohe Flexibilität bei der Anpassbarkeit zu bieten gelegt. Rapier versucht die neuesten Funktionen von Kodi zu unterstützen solange es mit diesen Zielen zu vereinbaren ist.</description>
+    <description lang="el_GR">Στόχος είναι η παροχή ενός απλού στη χρήση, καθαρού και κομψού περιβάλλοντος που εστιάζει στην απόδοση κατά την περιήγηση των πολυμέσων σας. Έχει δοθεί έμφαση στην χρηστικότητα, στην απόδοση, και στην παροχή στο χρήστη ευέλικτων δυνατοτήτων προσαρμογής. Το Rapier προσπαθεί να υποστηρίξει όλες τις τελευταίες δυνατότητες που προσφέρει το Kodi, αρκεί να ταιριάζουν με τους στόχους του σχεδιασμού του.</description>
+    <description lang="en_GB">The goal is to provide a simple to use but clean and elegant interface that focuses on efficiency when browsing your media. Important considerations are put on usability, performance, and providing the user with flexibility when it comes to customization. Rapier tries to support all the latest features Kodi has to offer as long as it fits in with the skin's design goals.</description>
+    <description lang="en_NZ">The goal is to provide a simple to use but clean and elegant interface that focuses on efficiency when browsing your media. Important considerations are put on usability, performance, and providing the user with flexibility when it comes to customisation. Rapier tries to support all the latest features Kodi has to offer as long as it fits in with the skin's design goals.</description>
+    <description lang="en_US">The goal is to provide a simple to use but clean and elegant interface that focuses on efficiency when browsing your media. Important considerations are put on usability, performance, and providing the user with flexibility when it comes to customization. Rapier tries to support all the latest features Kodi has to offer as long as it fits in with the skin's design goals.</description>
+    <description lang="es_ES">El objetivo es ofrecer una interfaz sencilla, limpia y elegante que se centre en la eficacia cuando se navega por el contenido. Se ha puesto un gran esfuerzo en la sencillez, en el rendimiento y en ofrecer al usuario la flexibilidad en cuanto a personalización. Rapier trata de soportar todas las últimas caracteristicas disponibles de Kodi, siempre y cuando se ajuste al diseño del skin.</description>
+    <description lang="fi_FI">Tavoitteena on tarjota helppokäyttöinen ja siisti käyttöliittymä, joka keskittyy tehokkaaseen median selaamiseen. Erityistä huolta on nähty käytettävyyden, suorituskyvyn ja muokattavuuden varmistamiseksi. Rapier pyrkii tukemaan kaikkia Kodin viimeisimpiä ominaisuuksia kunhan ne sopivat ulkoasun tyyliin.</description>
+    <description lang="fr_CA">Le but est de fournir une interface facile à utiliser mais propre et élégante, se concentrant sur l’efficacité lorsque vous parcourez votre contenu multimédia. Les considérations importantes sont la convivialité, la performance et de fournir à l’utilisateur une souplesse de personnalisation. Rapier essaie de prendre en charge toutes les dernières fonctions offertes par Kodi tant quelles s’ajustent aux buts conceptuels de l’habillage.</description>
+    <description lang="fr_FR">L'objectif est de proposer une interface simple mais aussi propre et élégante mettant l'accent sur l'efficacité pour parcourir vos médias. Les priorités sont l'ergonomie, la performance, et offrir la plus grande flexibilité à l'utilisateur à l'heure de la personnalisation. Rapier tente de prendre en charge les toutes dernières fonctionnalités de Kodi tant que ces dernières correspondent aux objectifs de l'habillage.</description>
+    <description lang="hu_HU">A cél egy könnyen kezelhető, tiszta és elegáns felület ami a médiaböngészés hatékonyságára fókuszál. Fontos szempont a használhatóság, teljesítmény és a rugalmas testreszabhatóság. A felszín fejlesztési céljainak figyelembevételével a Rapier törekszik a Kodi legújabb funkcióinak támogatására.</description>
+    <description lang="it_IT">L'obiettivo è quello di fornire un'interfaccia semplice da usare, pulita ed elegante, focalizzata sulla navigazione efficiente dei propri media. Sono tenute in particulare considerazione usabilità, performance e la giusta flessibilità nella personalizzazione. Rapier cerca di supportare tutte le caratteristiche offerte da Kodi, fintanto che si integrano con gli obiettivi di design della skin.</description>
+    <description lang="ja_JP">目指したことは、メディアを閲覧する際の効率に焦点を当てた、シンプルで使いやすく、エレガントですっきりしたインターフェイスを提供することです。大切な事は、ユーザビリティ、パフォーマンス、およびカスタマイズに関してユーザーに柔軟性を提供することです。Rapierは、スキンの設計目標に適合する限り、Kodiが持つすべての最新機能をサポートできるようにします。</description>
+    <description lang="ko_KR">효율적으로 미디어를 탐색할 수 있으면서도 멋있고 우아한 인터페이스를 제공하는 것이 스킨의 목적입니다. 사용성, 성능, 사용자 설정의 유연성을 고려하여 제작되었습니다. Rapier는 스킨의 디자인 목적에 부합하는 Kodi의 모든 최신 기능을 지원하려 합니다.</description>
+    <description lang="lt_LT">Tikslas yra pateikti paprastą naudoti, tačiau neperkrautą ir elegantišką sąsają, kuri pagrindinį dėmesį skiria efektyvumui naršant media įrašus. Daug dėmesio skirta patogumui ir našumui, tuo pačiu suteikiant vartotojui lankstumą, pritaikant teminę išvaizdą pagal savo poreikius. Rapier stengiasi palaikyti visas naujausias Kodi funkcijas, jei tik jos atitinka teminės išvaizdos dizaino tikslus.</description>
+    <description lang="ms_MY">Matlamat adalah untuk pengggunaan mudah serta antaramuka yang kemas dan elegan yang berfokuskan pada kecekapan melayari media anda. Pertimbangan utama adalah kebolehgunaan, prestasi, dan menyediakan fleksibiliti bila membuat penyuaian. Rapier cuba menyokong semua fitur terkini Kodi sediakan dengan syarat ia menepati matlamat rekabentuk kulit.</description>
+    <description lang="nl_NL">Het doel is om te voorzien in een simpel te gebruiken maar schone elegante interface dat zich focust op efficiëntie wanneer je door je media zoek. belangrijke afwegingen zijn gezet op gebruikersgemak, prestaties, en voorzien de gebruiker met flexibiliteit wanneer het komt bij aanpasbaarheid. Rapier probeert de laatste functies die Kodi heeft te ondersteunen. zolang het past in de skin's ontwerpdoelen.</description>
+    <description lang="pl_PL">Celem jest dostarczenie prostego w użyciu, a jednocześnie przejrzystego i eleganckiego interfejsu, skupionego na efektywności przeglądania mediów. Szczególny nacisk położono na użyteczność, wydajność oraz zapewnienie użytkownikowi elastyczności w jej konfiguracji. Rapier stara się obsługiwać wszystkie najnowsze funkcje jakie Kodi ma do zaoferowania, tak długo, jak pasują one do celów projektowych skóry.</description>
+    <description lang="pt_BR">O objetivo é proporcionar algo simples de usar, mas também uma interface limpa e elegante que se concentra na eficiência ao navegar em sua mídia. Considerações importantes são colocados em usabilidade, desempenho e proporcionando ao usuário a flexibilidade quando se trata de personalização. Rapier tenta apoiar todas as últimas características que Kodi tem a oferecer, desde que ele se encaixa com os objetivos do design da skin.</description>
+    <description lang="ru_RU">Цель - создать простой в использовании, но чистый и элегантный интерфейс, ориентированный на эффективность при просмотре мультимедиа. Важное значение придается удобству использования, производительности и гибкости при настройке. Rapier старается поддерживать все новейшие возможности Kodi, если они соответствуют целям дизайна обложки.</description>
+    <description lang="sk_SK">Cieľom je poskytnúť používateľsky jednoduché, ale aj čisté a elegantné rozhranie, ktoré sa zameriava na efektivitu pri prehliadaní vašich médií. Hlavný ohľad sa kladie na použiteľnosť, výkonnosť a poskytnutie používateľovi flexibilitu, pokiaľ ide o prispôsobenie. Rapier sa pokúša podporiť všetky najnovšie funkcie, ktoré Kodi ponúka, pokiaľ vyhovuje dizajnovým cieľom vzhľadu.</description>
+    <description lang="th_TH">สกินนี้มาพร้อมกับแนวคิดที่ต้องการให้ผู้ใช้สามารถใช้งานง่ายอีกทั้งดูดีและสะอาดตาโดยมุ่งเน้นที่ให้เลือกดูมีเดียต่างๆได้อย่างมีประสิทธิภาพ โดยจุดสำคัญที่โฟกัสคือสามารถใช้งานได้ครบถ้วนหลากหลาย, สมรรถนะการทำงานที่รวดเร็วและให้ความยืดหยุ่นเมื่อต้องมีความการกำหนดค่าด้วยตนเอง อีกทั้ง Rapier จะพยายามให้การสนับสนุนทุกๆ Feature ใหม่ที่ Kodi มีให้ให้สามารถใช้งานได้ตราบเท่าที่มันยังคงไม่ขัดต่อแนวคิดของสกินนี้</description>
+    <description lang="zh_CN">我们的目标是提供一个简洁易用，注重媒体浏览效率的界面。重点关注可用性、性能和提供用户定制的灵活性。Rapier 力求支持所有符合此皮肤设计目标的 Kodi 最新特性。</description>
+    <description lang="zh_TW">以提供易用且清晰優雅的介面為宗旨，致力於讓使用者能夠更有效率的瀏覽媒體檔案。考量重點在於可用性、效能及高度客製化可能性。只要符合本佈景主題的設計宗旨，我們將力求支援最新版Kodi提供的所有功能。</description>
+  </extension>
+</addon>
+</addons>
