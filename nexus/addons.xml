@@ -524,7 +524,7 @@ Version 1.0.37
 
 <addon id="script.user.rating"
     name="User Rating"
-    version="1.0.3"
+    version="1.0.4"
     provider-name="Regss">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
