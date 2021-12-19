@@ -544,7 +544,7 @@ Version 1.0.37
     </extension>
 </addon>
 
-<addon id="skin.rapier" version="12.3.5" name="Rapier" provider-name="Scarfa, Gade">
+<addon id="skin.rapier" version="12.3.6" name="Rapier" provider-name="Scarfa, Gade">
   <requires>
     <import addon="xbmc.gui" version="5.15.0"/>
     <import addon="script.favourites" version="4.0.9"/>
@@ -577,7 +577,7 @@ Version 1.0.37
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>[B]12.3.5[/B][CR]- Fixes for labels and icons in tv shows and seasons List Info 2 / 3 views[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
+    <news>[B]12.3.6[/B][CR]- Fixes for script.extendedinfo[CR][I]For a full list of changes visit https://raw.githubusercontent.com/gade01/Rapier/master/changelog.txt[/I]</news>
     <summary lang="bg_BG">Rapier от Scarfa и Gade.</summary>
     <summary lang="cs_CZ">Grafický vzhled vytvořili Scarfa a Gade.</summary>
     <summary lang="da_DK">Rapier skin af Scarfa, Gade.</summary>
@@ -610,7 +610,7 @@ Version 1.0.37
     <summary lang="sk_SK">Rapier vzhľad od Scarfa, Gade.</summary>
     <summary lang="th_TH">Rapier skin โดย Scarfa, Gade.</summary>
     <summary lang="zh_CN">Scarfa、Gade 设计的 Rapier 皮肤。</summary>
-    <summary lang="zh_TW">由Scarfa, Gade所開發的Rapier佈景主題</summary>
+    <summary lang="zh_TW">由Scarfa, Gade所開發的Rapier佈景主題。</summary>
     <description lang="bg_BG">Обликът е създаден с цел да предостави лесен, изчистен и елегантен интерфейс, фокусиран върху ефикасност при преглеждане на мултимедийното съдържание. Предвидени са множество опции за персонализиране. Стреми се към поддържане на всички функции на Kodi, стига те да не се разминават с целта на облика.</description>
     <description lang="da_DK">Målet er at levere en grænseflade, der er simpel at anvende, ren, elegant og fokuserer på effektivitet, når du browser dine medier. Vigtige overvejelser er gjort i forbindelse med brugervenlighed, ydelse og levering af fleksibilitet for brugeren, når det kommer til tilpasning. Rapier forsøger at understøtte alle de nyeste funktioner, Kodi har at tilbyde, så længe det stemmer overens med skin'ets design-mål.</description>
     <description lang="de_DE">Ziel ist, eine einfach zu benutzende, aber klare und elegante Oberfläche bereitzustellen, die sich auf Effizienz beim Durchsuchen von Medien konzentriert. Besonderes Augenmerk wurde auf Benutzerfreundlichkeit und Performance gelegt, und auch darauf, dem Anwender eine möglichst hohe Flexibilität bei der Anpassbarkeit zu bieten. Rapier versucht, die neuesten Funktionen von Kodi zu unterstützen, solange es mit diesen Zielen zu vereinbaren ist.</description>

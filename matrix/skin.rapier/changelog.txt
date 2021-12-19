@@ -1,4 +1,9 @@
 ------------------------
+[B]12.3.6 (19-December-21)[/B]
+------------------------
+- Fixes for script.extendedinfo.
+
+------------------------
 [B]12.3.5 (27-October-21)[/B]
 ------------------------
 - Fixes for labels and icons in tv shows and seasons List Info 2 / 3 views.
