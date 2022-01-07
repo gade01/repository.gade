@@ -1,4 +1,19 @@
 ------------------------
+[B]13.0.4 (7-January-22)[/B]
+------------------------
+- Added Player.Cuts and Player.SceneMarkers controls to fullscreen video OSD.
+
+------------------------
+[B]13.0.3 (2-January-22)[/B]
+------------------------
+- Updated fullscreen video technical info dialog.
+
+------------------------
+[B]13.0.2 (19-December-21)[/B]
+------------------------
+- Fixes for script.extendedinfo.
+
+------------------------
 [B]13.0.1 (9-December-21)[/B]
 ------------------------
 - Add game controllers port dialog.
