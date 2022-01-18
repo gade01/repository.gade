@@ -1,4 +1,9 @@
 ------------------------
+[B]12.3.8 (18-January-22)[/B]
+------------------------
+- Fix and cleanup home screen info dialog backgrounds.
+
+------------------------
 [B]12.3.7 (2-January-22)[/B]
 ------------------------
 - Updated fullscreen video technical info dialog.
