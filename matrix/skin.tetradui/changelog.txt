@@ -1,0 +1,29 @@
+[B]Version 1.0.0[/B]
+- Alpha version
+
+[B]Version 0.0.9[/B]
+- Matrix version
+
+[B]Version 0.0.8[/B]
+- Leia version
+
+[B]Version 0.0.7[/B]
+- Krypton version
+
+[B]Version 0.0.6[/B]
+- Jarvis version
+
+[B]Version 0.0.5[/B]
+- Isengard version
+
+[B]Version 0.0.4[/B]
+- Helix version
+
+[B]Version 0.0.3[/B]
+- Gotham version
+
+[B]Version 0.0.2[/B]
+- Frodo version
+
+[B]Version 0.0.1[/B]
+- Initial version
