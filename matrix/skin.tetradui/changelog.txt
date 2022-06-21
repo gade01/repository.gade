@@ -1,3 +1,7 @@
+[B]Version 1.1.1[/B]
+- Add new media control buttons
+- Recode and update side blade buttons
+
 [B]Version 1.1.0[/B]
 - Add update library / toggle watched buttons in media windows
 - Fix filter button in media windows
