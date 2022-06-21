@@ -1,5 +1,13 @@
+[B]Version 1.1.0[/B]
+- Add update library / toggle watched buttons in media windows
+- Fix filter button in media windows
+- Add completely new buttons images
+- Rewrite some views
+- Add README.md
+- Add screenshots
+
 [B]Version 1.0.1[/B]
-- Improvements to busy dialog
+- Improvements for busy dialog
 - Fixes for Now Playing widget
 - Fix DVD codec flag
 - Fix clock and background in fullscreen music and video window
