@@ -1,3 +1,6 @@
+[B]Version 1.1.3[/B]
+- Fix category and submenu focus
+
 [B]Version 1.1.2[/B]
 - Skin settings: hide movies / tv shows / music buttons are disabled if no library content is available
 - Add navigation welcome dialog
