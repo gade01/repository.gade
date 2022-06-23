@@ -1,3 +1,7 @@
+[B]Version 1.1.2[/B]
+- Skin settings: hide movies / tv shows / music buttons are disabled if no library content is available
+- Add navigation welcome dialog
+
 [B]Version 1.1.1[/B]
 - Add new media control buttons
 - Recode and update side blade buttons
@@ -7,7 +11,7 @@
 - Fix filter button in media windows
 - Add completely new buttons images
 - Rewrite some views
-- Add README.md
+- Add README.md (thanks to Ch3dd4rGoblin)
 - Add screenshots
 
 [B]Version 1.0.1[/B]
