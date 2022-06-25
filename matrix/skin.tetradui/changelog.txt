@@ -1,3 +1,12 @@
+[B]Version 1.1.6[/B]
+- Add skin settings to animate fanart backgrounds
+- Add support for script.artistslideshow
+
+[B]Version 1.1.5[/B]
+- Add missing radiobutton textures
+- Cleanup images
+- Add invalidcolor for edit control
+
 [B]Version 1.1.4[/B]
 - Add music multi disc support
 
