@@ -1,3 +1,8 @@
+[B]Version 1.1.7[/B]
+- Cleanup backgrounds
+- Fix backgrounds from Apps window
+- Update startup.xml
+
 [B]Version 1.1.6[/B]
 - Add skin settings to animate fanart backgrounds
 - Add support for script.artistslideshow
