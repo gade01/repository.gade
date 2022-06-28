@@ -1,3 +1,6 @@
+[B]Version 1.1.8[/B]
+- Fix sub blade backgrounds
+
 [B]Version 1.1.7[/B]
 - Cleanup backgrounds
 - Fix backgrounds from Apps window
