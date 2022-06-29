@@ -1,4 +1,8 @@
 [B]Version 1.1.9[/B]
+- Add ListItem.AddonLifecycleType / ListItem.AddonLifecycleDesc
+- Fixes for information window animations
+
+[B]Version 1.1.9[/B]
 - Add Russian translation (thanks to vansai)
 
 [B]Version 1.1.8[/B]
