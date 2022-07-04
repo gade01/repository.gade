@@ -1,4 +1,7 @@
-[B]Version 1.1.9[/B]
+[B]Version 1.1.11[/B]
+- Add add-on shortcuts for Applications window
+
+[B]Version 1.1.10[/B]
 - Add ListItem.AddonLifecycleType / ListItem.AddonLifecycleDesc
 - Fixes for information window animations
 
