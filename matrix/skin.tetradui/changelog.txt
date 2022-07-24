@@ -1,3 +1,7 @@
+[B]Version 1.2.1[/B]
+- Fix select dialog buttons and labels
+- Fix TetradUI logo position in Login screen
+
 [B]Version 1.2.0[/B]
 - Add PVR support
 
