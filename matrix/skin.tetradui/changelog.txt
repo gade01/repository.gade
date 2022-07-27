@@ -1,3 +1,13 @@
+[B]Version 1.2.3[/B]
+- Add RDS support
+
+[B]Version 1.2.2[/B]
+- Fix widget labels
+- Add Player.Chapters and Player.CutList to seekbar OSD
+- Add cache to progress bar OSD
+- Add slider control to video and music OSD
+- Remove slider control from DialogSeekBar.xml
+
 [B]Version 1.2.1[/B]
 - Fix select dialog buttons and labels
 - Fix TetradUI logo position in Login screen
