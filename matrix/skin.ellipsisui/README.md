@@ -31,7 +31,7 @@ To install this add-on you must do so from the Add-on manager from within Kodi b
 
 Any script dependencies that the skin requires will automatically be downloaded. If you already have the skin file, then go into the add-ons node and choose "Install from zip file" and select the EllipsisUI zip file.
 
-Manual installation of the skin can be done by moving the skin.tetradui folder inside the zip file into your addons folder of your Kodi profile.  
+Manual installation of the skin can be done by moving the skin.ellipsisui folder inside the zip file into your addons folder of your Kodi profile.  
 Please make sure you have the following scripts installed when doing it manually: 
 
 resource.images.studios.white v0.0.1
@@ -39,7 +39,7 @@ resource.uisounds.ellipsisui v0.0.1
 <br>
 
 ## DEVELOPMENT REPOSITORY:  
-By installing Gade's Development Repository you will always automatically receive the newest and freshest development updates of TetradUI and my other add-ons. You will still automatically get the official updates.  
+By installing Gade's Development Repository you will always automatically receive the newest and freshest development updates of EllipsisUI and my other add-ons. You will still automatically get the official updates.  
 To install this repository, you must do so by following these steps:  
 
 1. [Download the zip file containing Gade's Add-on Repository from Github](https://github.com/gade01/repository.gade/raw/master/leia/repository.gade/repository.gade-2.1.1.zip)   
@@ -60,7 +60,7 @@ After this, you will automatically receive the latest development versions of El
 ## LINKS:
 [Kodi forum (skin support)](https://forum.kodi.tv/showthread.php?tid=368248)
 
-[SCREENSHOTS](url placeholder)  
+[SCREENSHOTS](https://imgur.com/a/G8yUtu6#ITyo1Hp)  
 <br>
 
 ## CREDITS: 

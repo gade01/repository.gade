@@ -238,7 +238,7 @@
     </extension>
 </addon>
 
-<addon id="skin.ellipsisui" version="2.3.0" name="EllipsisUI" provider-name="TeamUI">
+<addon id="skin.ellipsisui" version="2.3.8" name="EllipsisUI" provider-name="TeamUI">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
 		<import addon="resource.images.studios.white" version="0.0.1"/>
