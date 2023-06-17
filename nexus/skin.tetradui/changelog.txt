@@ -1,8 +1,14 @@
-[B]Version 2.1.0[/B]
-- Update skin to 1080 resolution
+[B]Version 2.1.3[/B]
+- Remove DontBlendBackground skin setting
+
+[B]Version 2.1.2[/B]
+- Completely new and redesigned media flags
 
 [B]Version 2.1.1[/B]
 - Completely new and redesigned default and skin icons
+
+[B]Version 2.1.0[/B]
+- Update skin to 1080 resolution
 
 [B]Version 2.0.1[/B]
 - Add 2 sets of default backgrounds, skin setting and select dialog

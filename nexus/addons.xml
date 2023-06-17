@@ -337,7 +337,7 @@
   </extension>
 </addon>
 
-<addon id="skin.tetradui" version="2.1.1" name="TetradUI" provider-name="Jezz_X, TeamUI">
+<addon id="skin.tetradui" version="2.1.3" name="TetradUI" provider-name="Jezz_X, TeamUI">
   <requires>
     <import addon="xbmc.gui" version="5.15.00" />
 	<import addon="script.embuary.helper" version="2.0.2"/>
@@ -366,7 +366,8 @@
       <screenshot>resources/screenshot-09.png</screenshot>
       <screenshot>resources/screenshot-10.png</screenshot>
     </assets>
-    <news>[B]2.1.1[/B][CR]- Completely new and redesigned default and skin icons</news>
+    <news>[B]2.1.3[/B][CR]- Remove DontBlendBackground skin setting</news>
+    <summary lang="bg_BG">TetradUI е тема за Kodi media ccenter</summary>
     <summary lang="da_DK">TetradUI er et skin til Kodi mediecenter</summary>
     <summary lang="en_GB">TetradUI is a skin add-on for Kodi media center</summary>
     <summary lang="es_ES">TetradUI es un Add-on de skin para el centro multimedia Kodi</summary>
@@ -380,7 +381,7 @@
     <description lang="es_ES">TetradUI es un Add-on de skin para Kodi. El objetivo de TetradUI es crear un homenaje fresco y moderno de las IU clásicas encontradas en el panel original de Xbox360. También vistas en los trabajos de Team Blackbolt y Jezz_X con los proyectos MC360 y JX720 respectivamente. TetradUI esta basado en JX720 de Jezz_X.[CR] Este Add-on fue creado por Jezz_X y TeamUI.</description>
     <description lang="fr_FR">TetradUI est un skin pour Kodi. L&apos;objectif de TetradUI est de créer un nouvel hommage moderne à l&apos;interface utilisateur de style lame classique trouvée dans le tableau de bord Xbox360 d&apos;origine. Également vu dans les travaux de Team Blackbolt et Jezz_X avec les projets MC360 et JX720 respectivement. TetradUI est basé sur JX720 par Jezz_X.[CR]Ce skin a été créé par Jezz_X et TeamUI.</description>
     <description lang="it_IT">TetradUI è uno skin add-on per Kodi media center. L&apos;obiettivo con TetradUI è creare un omaggio moderno e fresco della classica interfaccia utente in stile blade che si trova nella dashboard originale di Xbox360. Visto anche nei lavori del Team Blackbolt e Jezz_X rispettivamente con i progetti MC360 e JX720. TetradUI è basato su JX720 di Jezz_X.[CR]Questo componente aggiuntivo è stato creato da Jezz_X e TeamUI.</description>
-    <description lang="pl_PL">TetradUI jest to skin add-on (skórką) dla Kodi media center. Naszym celem za pośrednictwem TetradUI jest stworzenie świeżego i współczesnego wizerunku klasycznego blades UI znanego z oryginalnego pulpitu Xboxa 360. Inspiracje tym stylem można było znaleźć w pracach Team Blackbolt i Jezz_X w projektach MC360 i JX720. TetradUI bazuje na JX720 stworzonym przez Jezz_X.[CR]Ten add-on (dodatek) został stworzony przez Jezz_X i TeamUI.</description>
+    <description lang="pl_PL">TetradUI jest to skin add-on (skórka) dla Kodi media center. Naszym celem za pośrednictwem TetradUI jest stworzenie świeżego i współczesnego wizerunku klasycznego blades UI znanego z oryginalnego pulpitu Xboxa 360. Inspiracje tym stylem można było znaleźć w pracach Team Blackbolt i Jezz_X w projektach MC360 i JX720. TetradUI bazuje na JX720 stworzonym przez Jezz_X.[CR]Ten add-on (dodatek) został stworzony przez Jezz_X i TeamUI.</description>
     <description lang="ru_RU">TetradUI - это обложка для медиацентра Kodi. Цель TetradUI - создать свежую современную версию классического пользовательского интерфейса в виде клинков, присутствующего в оригинальной приборной панели Xbox360. Также его можно увидеть в работах Team Blackbolt и Jezz_X с проектами MC360 и JX720 соответственно. TetradUI основан на JX720 от Jezz_X.[CR]Это дополнение было создано Jezz_X и TeamUI.</description>
   </extension>
 </addon>
